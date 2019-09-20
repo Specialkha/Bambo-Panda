@@ -1,0 +1,14 @@
+.f{
+    display: inline-block;
+    margin: 3em;
+}
+#f1{
+    position: absolute;
+    margin-left: 33em;
+}
+#f2{
+    position: absolute;
+}
+.retourf{
+    text-decoration: none;
+}

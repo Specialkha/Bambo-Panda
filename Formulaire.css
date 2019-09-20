@@ -1,0 +1,22 @@
+form{
+    height: 20em;
+    text-align: center;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+fieldset{
+    height: 16em;
+    background-color: #3f641c5d;
+    border-radius: 10px;
+}
+form label, form input{
+    width: 10em;
+    text-align: center;
+    border-radius: 10px;
+}
+select{
+    border-radius: 10px;
+}
+legend{
+    font-weight: bold;
+}

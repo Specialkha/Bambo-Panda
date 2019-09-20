@@ -1,0 +1,22 @@
+nav ul{
+    text-align: center;
+    background-color: rgba(79, 99, 7, 0.596);
+    height: 3em;
+    margin-top: 0;
+    }
+nav li{
+    display: inline-block;
+    margin-top: 9px;
+    }
+#menus{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    background-color: #44641086;
+    border: 2px solid #6f94199d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 150%; 
+    margin-left: 1em; 
+    margin-right: 1em;
+    padding: 0.1em;  
+    }
