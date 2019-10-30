@@ -1,9 +1,11 @@
 <?php
+$title = "Confirmation de votre commande";
 session_start();
 $_SESSION = array();
 session_destroy();
 $index = false;
 $catalogue = true;
+
 
 
 

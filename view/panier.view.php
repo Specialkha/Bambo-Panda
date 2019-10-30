@@ -1,6 +1,6 @@
 <article>
     <form action="../pages/order.php" method="POST" id="cartform">
-        <table id="order">
+        <table id="ordertable">
             <div id="ordertitle">Votre commande</div>
             <tr>
                 <td>Désignation article</td>
@@ -21,6 +21,6 @@
                 <?php endforeach; ?>
         </table>
         <div id="totalorder">Total de la commande : <?php echo $totalprice; ?> €</div>
-        <button type="submit" value="commander">Passer commande</button>
+        <button type="submit" value="order" id="order">Passer commande</button>
     </form>
 </article>

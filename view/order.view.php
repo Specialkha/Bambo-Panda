@@ -1,4 +1,1 @@
-<?php
-$title = "Confirmation de votre commande";
-?>
-<article>Votre commande a bien été prise en compte</article>
+<article id="confirm-order">Nous vous remercions de votre commande. Vous recevrez vos produits sous 48 heures.</article>

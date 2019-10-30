@@ -5,8 +5,7 @@
         <a href="./pages/catalogue.php?collection=femmes"><img id=photo2 src=".\public\images\produits\FM784_Sweet_colroule.jpg.jpg" alt="Pull Femme"></a>
         <a href="./pages/catalogue.php?collection=enfants"><img id=photo3 src=".\public\images\produits\EN621_short_cotonbio.jpg.jpg" alt="Short Enfant"></a>
     </div>
-    <p>
-        
+    <div id="nsvaleurs">
         <H2 id="valeur">Nos valeurs et nos engagements</H2>
         <div id="valeurs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus dolorum suscipit? Ab iusto
             nisi, ratione commodi necessitatibus ut dicta nihil, suscipit iste sequi ipsa dolores praesentium quam id
@@ -18,6 +17,5 @@
             eaque magni facilis nesciunt nihil totam provident nam deserunt, ducimus accusantium repellendus corrupti
             rerum molestiae nemo ea.
         </div>
-    </p>
-    
+    </div>
 </article>
