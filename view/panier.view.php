@@ -21,6 +21,7 @@
                 <?php endforeach; ?>
         </table>
         <div id="totalorder">Total de la commande : <?php echo $totalprice; ?> €</div>
+        <input type="hidden" value="<?php echo $totalprice; ?>" name="orderform">
         <button type="submit" value="order" id="order">Passer commande</button>
     </form>
 </article>

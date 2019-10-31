@@ -1,0 +1,1 @@
+<article id="confirm-order">Désolé mais vous ne pouvez pas envoyer une commande vide!</article>

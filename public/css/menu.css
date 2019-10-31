@@ -1,4 +1,5 @@
-html , body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -63,27 +64,6 @@ nav li {
     padding: 0.1em;
 }
 
-#photo1 {
-
-    top: 30em;
-    width: 30em;
-    margin-left: 2em;
-}
-
-#photo2 {
-
-    top: 30em;
-    width: 30em;
-    left: 34em;
-}
-
-#photo3 {
-
-    top: 30em;
-    width: 30em;
-    left: 66em;
-}
-
 header {
     height: 18em;
     background-color: rgba(204, 204, 153, 0.5);
@@ -117,22 +97,6 @@ body {
 #retour {
     text-decoration: none;
     color: black;
-}
-
-@media screen and (min-width: 768px) and (max-width:1388px) {
-    #logo {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 732px) {
-    #logo {
-        width: 50%;
-    }
-
-    header {
-        display: none;
-    }
 }
 
 form {
@@ -169,51 +133,68 @@ legend {
 }
 
 .fichearticle {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 25% 15% 10% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
     padding: 10px;
     border: 8px solid #d6d6c2;
     border-radius: 50px;
     background-color: #ffffff;
-    width: 30%;
-    height: 50%;
+    margin: 2rem;
+    height: 50em;
     box-sizing: border-box;
-    margin-bottom: 15px;
-    margin-top: 3em;
 }
 
 .detailproduit {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 30%;
+    grid-column: 2/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 .titrearticle {
-    font-size: 2.5em;
-    margin-top: 0;
-    margin-left: 4em;
-    margin-right: 3em;
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+    justify-self: stretch;
+    align-self: center;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
 }
 
 .descriptionarticle {
-    margin-bottom: 2em;
+    grid-column: 2/5;
+    grid-row: 2/4;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.article {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 .article img {
-    height: 260px;
-    width: 170px;
+    height: 30rem;
+    width: 20rem;
 }
 
 .prix {
+    grid-column: 5/6;
+    grid-row: 2/4;
     color: #99ccff;
-    font-size: 3em;
+    font-size: 5em;
     padding: 0;
     text-align: center;
-    margin-left: 1em;
-    margin-bottom: 1em;
+}
+
+.form {
+    grid-column: 2/5;
+    grid-row: 4/5;
 }
 
 #nouveautes {
@@ -237,13 +218,10 @@ legend {
 
 #valeur {
     color: white;
-}
-
-h2 {
     text-align: center;
-    font-size: 5em;
     font-family: 'Dancing Script', cursive;
     font-weight: normal;
+    font-size: 3.5em;
 }
 
 #cgv {
@@ -267,7 +245,8 @@ table {
     color: white;
 }
 
-#ordertitle, #totalorder {
+#ordertitle,
+#totalorder {
     font-size: 2em;
     font-weight: bold;
     color: white;
@@ -326,6 +305,7 @@ button {
     background-repeat: no-repeat;
     margin: 0;
 }
+
 #allcgv {
     background-color: rgba(102, 102, 51, 0.8);
     border: 10px solid #6f94199d;
@@ -335,6 +315,7 @@ button {
     margin-bottom: 0;
     color: white;
 }
+
 .wrap {
     height: 120px;
 }
@@ -347,4 +328,56 @@ button {
     padding: 15px;
     margin-bottom: 20px;
     color: white;
+}
+
+@media (max-width: 2500px) {
+    .detailproduit {
+        margin-left: 1em;
+    }
+    .article img {
+        height: 15em;
+        width: 10em;
+    }
+    .fichearticle {
+        padding: 10px;
+        border: 8px solid #d6d6c2;
+        border-radius: 50px;
+        background-color: #ffffff;
+        height: 40em;
+        width: 40em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .descriptionarticle {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    #logo {
+        display: none;
+    }
+
+    .descriptionarticle {
+        margin-left: 6rem;
+    }
+
+    .article img {
+        height: 200px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 50%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .descriptionarticle {
+        margin-left: 150px;
+    }
 }
