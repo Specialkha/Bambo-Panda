@@ -1,17 +1,10 @@
 <?php
-session_start();
 include_once '../lib/data.inc.php';
 
 $catalogue = true;
 
-$nom = "";
-$image = "";
 $datas = array();
-$cart = array();
 
-if (isset($_SESSION["buy"])) :
-    $cart = $_SESSION["buy"];
-endif;
 
 if (isset($_GET["collection"])) :
     $choix = $_GET["collection"];

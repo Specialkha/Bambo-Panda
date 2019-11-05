@@ -1,5 +1,6 @@
 
 <article id="allcgv">
+    <a href="top"></a>
     <h1 id="cgv">"Conditions Générales de Vente"</h1>
     <p id="cgvp">Article 1 : CHAMP D'APPLICATION<br>
         <br>La société SARL BAMBOU exploite le site www.bambou.com lequel est spécialisé dans la vente de vêtements et
@@ -216,6 +217,7 @@
         l’exécution ou la résiliation dudit contrat, sera soumis au droit français, à l'exclusion des dispositions de la
         convention des Nations Unies sur les contrats de vente internationale de marchandises (CVIM) du 11 avril 1980.
     </p>
+    <a href="#top" id="back-top">Revenir en haut de la page</a>
 </article>
 <div class="wrap">
 
